@@ -987,7 +987,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "clash-verge"
+name = "clash-goku"
 version = "2.0.0"
 dependencies = [
  "aes-gcm",

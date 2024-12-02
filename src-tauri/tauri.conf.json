@@ -11,11 +11,11 @@
       "icons/icon.ico"
     ],
     "resources": ["resources"],
-    "publisher": "Clash Verge Rev",
+    "publisher": "Clash Goku",
     "externalBin": ["sidecar/verge-mihomo", "sidecar/verge-mihomo-alpha"],
     "copyright": "GNU General Public License v3.0",
     "category": "DeveloperTool",
-    "shortDescription": "Clash Verge Rev",
+    "shortDescription": "Clash Goku",
     "createUpdaterArtifacts": "v1Compatible"
   },
   "build": {
@@ -24,7 +24,7 @@
     "beforeDevCommand": "pnpm run web:dev",
     "devUrl": "http://localhost:3000/"
   },
-  "productName": "Clash Verge",
+  "productName": "Clash Goku",
   "version": "2.0.0",
   "identifier": "io.github.clash-verge-rev.clash-verge-rev",
   "plugins": {
