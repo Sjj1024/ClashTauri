@@ -7,7 +7,7 @@
     "dev:diff": "cross-env RUST_BACKTRACE=1 tauri dev -f verge-dev",
     "build": "cross-env NODE_OPTIONS='--max-old-space-size=4096' tauri build",
     "tauri": "tauri",
-    "icon": "tauri icon",
+    "icon": "tauri icon && node ./scripts/creatIcon.cjs",
     "web:dev": "vite",
     "web:build": "tsc --noEmit && vite build",
     "web:serve": "vite preview",
