@@ -104,7 +104,7 @@ impl Tray {
             let mut icon = match tray_icon.as_str() {
                 "colorful" => {
                     use_custom_icon = true;
-                    include_bytes!("../../icons/tray-icon-sys.ico").to_vec()
+                    include_bytes!("../../icons/active_shield.ico").to_vec()
                 }
                 _ => include_bytes!("../../icons/tray-icon-sys-mono.ico").to_vec(),
             };
