@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "bundle": {
     "active": true,
-    "longDescription": "Clash Verge Rev",
+    "longDescription": "ClashX",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -11,11 +11,11 @@
       "icons/icon.ico"
     ],
     "resources": ["resources"],
-    "publisher": "Clash Goku",
+    "publisher": "ClashX",
     "externalBin": ["sidecar/verge-mihomo", "sidecar/verge-mihomo-alpha"],
     "copyright": "GNU General Public License v3.0",
     "category": "DeveloperTool",
-    "shortDescription": "Clash Goku",
+    "shortDescription": "ClashX",
     "createUpdaterArtifacts": "v1Compatible"
   },
   "build": {
@@ -24,9 +24,9 @@
     "beforeDevCommand": "pnpm run web:dev",
     "devUrl": "http://localhost:3000/"
   },
-  "productName": "Clash Goku",
+  "productName": "ClashX",
   "version": "2.0.0",
-  "identifier": "io.github.clash-verge-rev.clash-verge-rev",
+  "identifier": "io.github.clash-x-rev.clash-x-rev",
   "plugins": {
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEQyOEMyRjBCQkVGOUJEREYKUldUZnZmbStDeStNMHU5Mmo1N24xQXZwSVRYbXA2NUpzZE5oVzlqeS9Bc0t6RVV4MmtwVjBZaHgK",

@@ -4,6 +4,14 @@
   display: flex;
   overflow: hidden;
 
+  .theLogo {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__left {
     flex: 1 0 200px;
     display: flex;
@@ -125,7 +133,7 @@
     //  padding-top: 24px;
     //}
 
-    .layout__left .the-logo {
+    .layout__left .theLogo {
       flex: 1 0 58px;
       margin-top: 10px;
       margin-left: 10px;
@@ -133,6 +141,8 @@
       padding-left: 10px;
       padding-right: 20px;
       padding-bottom: 16px;
+      font-size: 28px;
+      font-weight: bold;
     }
 
     .layout__right .the-content {

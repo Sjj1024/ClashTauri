@@ -142,28 +142,8 @@ const Layout = () => {
           ]}
         >
           <div className="layout__left">
-            <div className="the-logo" data-tauri-drag-region="true">
-              <div
-                style={{
-                  height: "27px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                <SvgIcon
-                  component={isDark ? iconDark : iconLight}
-                  style={{
-                    height: "36px",
-                    width: "36px",
-                    marginTop: "-3px",
-                    marginRight: "5px",
-                    marginLeft: "-3px",
-                  }}
-                  inheritViewBox
-                />
-                <LogoSvg fill={isDark ? "white" : "black"} />
-              </div>
-              {/* {<UpdateButton className="the-newbtn" />} */}
+            <div className="theLogo" data-tauri-drag-region="true">
+              ClashX
             </div>
 
             <List className="the-menu">
