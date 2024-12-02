@@ -210,7 +210,6 @@ pub fn get_sys_proxy() -> CmdResult<Mapping> {
 #[tauri::command]
 pub fn get_auto_proxy() -> CmdResult<Mapping> {
     let current = wrap_err!(Autoproxy::get_auto_proxy())?;
-
     let mut map = Mapping::new();
     map.insert("enable".into(), current.enable.into());
     map.insert("url".into(), current.url.into());

@@ -150,8 +150,10 @@ pub fn run() {
             }
         }
         tauri::RunEvent::WindowEvent { label, event, .. } => {
+            // 事件监听
             if label == "main" {
                 match event {
+                    // 关闭事件
                     tauri::WindowEvent::CloseRequested { api, .. } => {
                         if core::handle::Handle::global().is_exiting() {
                             return;
@@ -161,6 +163,7 @@ pub fn run() {
                         let window = core::handle::Handle::global().get_window().unwrap();
                         let _ = window.hide();
                     }
+                    // 获取焦点事件
                     tauri::WindowEvent::Focused(true) => {
                         #[cfg(target_os = "macos")]
                         {
@@ -182,6 +185,7 @@ pub fn run() {
                             log_err!(hotkey::Hotkey::global().unregister("Control+Q"));
                         };
                     }
+                    // 销毁事件
                     tauri::WindowEvent::Destroyed => {
                         #[cfg(target_os = "macos")]
                         {
