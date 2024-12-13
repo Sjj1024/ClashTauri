@@ -55,13 +55,16 @@ pub fn run() {
             }
             #[cfg(target_os = "macos")]
             {
+                // 监听 deep-link 协议
                 app.listen("deep-link://new-url", |event| {
                     tauri::async_runtime::spawn(async move {
                         let payload = event.payload();
+                        // 处理深链接
                         log_err!(resolve_scheme(payload.to_owned()).await);
                     });
                 });
             }
+            // 设置 app 状态
             tauri::async_runtime::block_on(async move {
                 resolve::resolve_setup(app).await;
 

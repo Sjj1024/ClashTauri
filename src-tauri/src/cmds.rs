@@ -194,6 +194,7 @@ pub async fn restart_core() -> CmdResult {
 /// get the system proxy
 #[tauri::command]
 pub fn get_sys_proxy() -> CmdResult<Mapping> {
+    // 获取系统代理
     let current = wrap_err!(Sysproxy::get_system_proxy())?;
     let mut map = Mapping::new();
     map.insert("enable".into(), current.enable.into());

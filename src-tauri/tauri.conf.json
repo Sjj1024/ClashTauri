@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "bundle": {
     "active": true,
-    "longDescription": "ClashX",
+    "longDescription": "ClashPro",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -11,11 +11,11 @@
       "icons/icon.ico"
     ],
     "resources": ["resources"],
-    "publisher": "ClashX",
+    "publisher": "ClashPro",
     "externalBin": ["sidecar/verge-mihomo", "sidecar/verge-mihomo-alpha"],
     "copyright": "GNU General Public License v3.0",
     "category": "DeveloperTool",
-    "shortDescription": "ClashX",
+    "shortDescription": "ClashPro",
     "createUpdaterArtifacts": "v1Compatible"
   },
   "build": {
@@ -24,7 +24,7 @@
     "beforeDevCommand": "pnpm run web:dev",
     "devUrl": "http://localhost:3000/"
   },
-  "productName": "ClashX",
+  "productName": "ClashPro",
   "version": "2.0.0",
   "identifier": "io.github.clash-x-rev.clash-x-rev",
   "plugins": {

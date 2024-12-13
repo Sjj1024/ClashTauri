@@ -143,7 +143,7 @@ const Layout = () => {
         >
           <div className="layout__left">
             <div className="theLogo" data-tauri-drag-region="true">
-              ClashX
+              ClashPro
             </div>
 
             <List className="the-menu">

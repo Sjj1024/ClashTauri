@@ -81,6 +81,7 @@ export const ConnectionTable = (props: Props) => {
 
   const connRows = useMemo(() => {
     return connections.map((each) => {
+      console.log("each----", each);
       const { metadata, rulePayload } = each;
       const chains = [...each.chains].reverse().join(" / ");
       const rule = rulePayload ? `${each.rule}(${rulePayload})` : each.rule;
